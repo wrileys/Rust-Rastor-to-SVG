@@ -1,0 +1,20 @@
+[package]
+name = "image_to_svg_2"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+image = "0.24.0"
+svg = "0.7.0"
+ramer_douglas_peucker = "0.2.2"
+env_logger = "0.9"
+log = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+
+[lib]
+name = "image_to_svg_converter"
+path = "src/image_to_svg_converter.rs"
+
+[[bin]]
+name = "image_to_svg"
+path = "src/main.rs"
